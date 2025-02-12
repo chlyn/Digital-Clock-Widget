@@ -21,32 +21,55 @@ body {
     align-items: center;
     gap: 5px; 
     padding: 3vw;
-    border-radius: 3vw;
     max-width: 90vw;
     max-height: 90vh;
+}
+
+.hour-container, .minute-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F3F9;
+    padding: 20px 15px;
+    border-radius: 3vw;
+    display: inline-block;
 }
 
 .hour, .minute {
     font-size: 40vw;
     font-weight: bolder;
     text-align: center;
-    padding: 20px 15px;
-    border-radius: 3vw;
+    line-height: 1; 
 }
 
+.ampm {
+    font-size: 6vw;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.day {
+    font-size: 6vw;
+    font-weight: bolder;
+    text-align: right;
+}
+
+
 /* Default (Light Mode) */
-.hour, .minute {
+.hour, .minute, .ampm, .day {
     color: #9065B0;
-    background-color: #F6F3F9;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #191919;
     }
-    .hour, .minute {
-        color: #9A6DD7;
+
+    .hour-container, .minute-container{
         background-color: #2b2431;
+    }
+
+    .hour, .minute, .ampm, .day {
+        color: #9A6DD7;
     }
 
 }
