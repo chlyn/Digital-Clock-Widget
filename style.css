@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: "Bebas Neue", sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -18,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw; 
+    gap: 5px; 
     padding: 3vw;
     border-radius: 3vw;
     max-width: 90vw;
@@ -31,7 +32,6 @@ body {
     text-align: center;
     padding: 20px 15px;
     border-radius: 3vw;
-    margin: 2px;
 }
 
 /* Default (Light Mode) */
