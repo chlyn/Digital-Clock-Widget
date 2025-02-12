@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+.hour {
+    font-size: 40vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 3vw;
+    margin: 2px;
+}
+
+.minute {
+    font-size: 40vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 3vw;
+    margin: 2px;
+}
+
+
+/* Default (Light Mode) */
+.hour {
+    color: #9065B0;
+    background-color: #F6F3F9;
+}
+
+.minute {
+    color: #9065B0;
+    background-color: #F6F3F9;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919;
+    }
+    .hour {
+        color: #9A6DD7;
+        background-color: #2b2431;
+    }
+
+    .minute {
+        color: #9A6DD7;
+        background-color: #2b2431;
+    }
+
+}
