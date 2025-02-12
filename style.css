@@ -9,34 +9,33 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: white;
+    overflow: hidden;
 }
-.hour {
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; 
+    padding: 3vw;
+    border-radius: 3vw;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.hour, .minute {
     font-size: 40vw;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     padding: 20px 15px;
     border-radius: 3vw;
     margin: 2px;
 }
-
-.minute {
-    font-size: 40vw;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px 15px;
-    border-radius: 3vw;
-    margin: 2px;
-}
-
 
 /* Default (Light Mode) */
-.hour {
-    color: #9065B0;
-    background-color: #F6F3F9;
-}
-
-.minute {
+.hour, .minute {
     color: #9065B0;
     background-color: #F6F3F9;
 }
@@ -45,12 +44,7 @@ body {
     body {
         background-color: #191919;
     }
-    .hour {
-        color: #9A6DD7;
-        background-color: #2b2431;
-    }
-
-    .minute {
+    .hour, .minute {
         color: #9A6DD7;
         background-color: #2b2431;
     }
