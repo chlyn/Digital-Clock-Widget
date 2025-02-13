@@ -7,8 +7,6 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     background-color: white;
@@ -17,38 +15,33 @@ body {
 
 .clock-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 5px; 
-    padding: 3vw;
-    max-width: 90vw;
-    max-height: 90vh;
 }
 
 .hour-container, .minute-container {
     display: flex;
     flex-direction: column;
     background-color: #F6F3F9;
-    padding: 20px 15px;
-    border-radius: 3vw;
+    padding: 8vh 5vh;
+    border-radius: 5vh;
     display: inline-block;
 }
 
 .hour, .minute {
-    font-size: 40vw;
+    font-size: 65vh;
     font-weight: bolder;
     text-align: center;
-    line-height: 1; 
+    line-height: 1.15; 
 }
 
 .ampm {
-    font-size: 6vw;
+    font-size: 10vh;
     font-weight: bolder;
     text-align: left;
 }
 
 .day {
-    font-size: 6vw;
+    font-size: 10vh;
     font-weight: bolder;
     text-align: right;
 }
